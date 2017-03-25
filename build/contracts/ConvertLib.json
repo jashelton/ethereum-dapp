@@ -34,9 +34,15 @@
     "1490423154477": {
       "links": {},
       "events": {},
-      "updated_at": 1490423189848
+      "updated_at": 1490425244003
+    },
+    "1490426230323": {
+      "links": {},
+      "events": {},
+      "updated_at": 1490458955435,
+      "address": "0x890134963d4e9ba74d26019884ce8b4de71e7f7d"
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1490423189848
+  "updated_at": 1490458955435
 }

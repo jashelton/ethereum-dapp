@@ -4,7 +4,47 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "balance",
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
       "outputs": [
         {
           "name": "",
@@ -15,30 +55,34 @@
       "type": "function"
     },
     {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_value",
-          "type": "uint256"
-        }
-      ],
-      "name": "deposit",
-      "outputs": [
-        {
-          "name": "_newValue",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "type": "function"
-    },
-    {
       "inputs": [],
       "payable": false,
       "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "voteCast",
+      "type": "event"
     }
   ],
-  "unlinked_binary": "0x606060405234610000575b6103e86000555b5b60a9806100206000396000f300606060405263ffffffff60e060020a600035041663b69ef8a88114602c578063b6b55f25146048575b6000565b3460005760366067565b60408051918252519081900360200190f35b346000576036600435606d565b60408051918252519081900360200190f35b60005481565b600080548201908190555b9190505600a165627a7a723058203fa43c0d61e346fa986cad4264ac751878bb07b1f7386d4654301cae86b135030029",
+  "unlinked_binary": "0x606060405234610000575b60008054600160a060020a03191633600160a060020a03908116919091178083551681526001602052604090206103e890555b5b6101c88061004d6000396000f300606060405263ffffffff60e060020a6000350416638da5cb5b811461003a578063a9059cbb14610063578063f8b2cb4f14610093575b610000565b34610000576100476100be565b60408051600160a060020a039092168252519081900360200190f35b346100005761007f600160a060020a03600435166024356100cd565b604080519115158252519081900360200190f35b34610000576100ac600160a060020a036004351661017d565b60408051918252519081900360200190f35b600054600160a060020a031681565b6000805460408051600160a060020a0380871682526020820186905290921682820152517fbfadb2e9f8e69d8d3746daf68d7c82116fdc1abefb651b535cdf68b03a883f859181900360600190a1600160a060020a0333166000908152600160205260409020548290101561014457506000610177565b50600160a060020a0333811660009081526001602081905260408083208054869003905592851682529190208054830190555b92915050565b600160a060020a0381166000908152600160205260409020545b9190505600a165627a7a72305820dd8ba0df571c8092a4ed84a4365c4977c428f1e4b6f23c1a113c02662de208d40029",
   "networks": {
     "1490419070734": {
       "events": {},
@@ -49,10 +93,39 @@
     "1490423154477": {
       "events": {},
       "links": {},
-      "address": "0x6714f875c310efb36eb32a8825b4e9d096cca95d",
-      "updated_at": 1490423189853
+      "address": "0x1a2bb096955e5a0bef3a4d9c36b8be8dec3d74a9",
+      "updated_at": 1490425244007
+    },
+    "1490426230323": {
+      "events": {
+        "0xbfadb2e9f8e69d8d3746daf68d7c82116fdc1abefb651b535cdf68b03a883f85": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "owner",
+              "type": "address"
+            }
+          ],
+          "name": "voteCast",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x7c91c7e33f11503c746b0b7f0c46e59ecaa75d6f",
+      "updated_at": 1490458955441
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1490423189853
+  "updated_at": 1490458955441
 }

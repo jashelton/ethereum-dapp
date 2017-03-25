@@ -15,20 +15,44 @@
       "type": "function"
     },
     {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [
+        {
+          "name": "_newValue",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
       "inputs": [],
       "payable": false,
       "type": "constructor"
     }
   ],
-  "unlinked_binary": "0x6060604052346000575b6103e86000555b5b60708061001f6000396000f300606060405263ffffffff60e060020a600035041663b69ef8a881146022575b6000565b34600057602c603e565b60408051918252519081900360200190f35b600054815600a165627a7a723058206a25225e1f7841127eda44533208b09bfa7c3395d3da640453f63fe9b634df5e0029",
+  "unlinked_binary": "0x606060405234610000575b6103e86000555b5b60a9806100206000396000f300606060405263ffffffff60e060020a600035041663b69ef8a88114602c578063b6b55f25146048575b6000565b3460005760366067565b60408051918252519081900360200190f35b346000576036600435606d565b60408051918252519081900360200190f35b60005481565b600080548201908190555b9190505600a165627a7a723058203fa43c0d61e346fa986cad4264ac751878bb07b1f7386d4654301cae86b135030029",
   "networks": {
     "1490419070734": {
       "events": {},
       "links": {},
-      "address": "0x7a8ad5f06a77a139deaac386c5c50e0daef90477",
-      "updated_at": 1490420990709
+      "address": "0xf27a296cff765f3d84c5ee7da19e765937b9f48c",
+      "updated_at": 1490422254610
+    },
+    "1490423154477": {
+      "events": {},
+      "links": {},
+      "address": "0x6714f875c310efb36eb32a8825b4e9d096cca95d",
+      "updated_at": 1490423189853
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1490420990709
+  "updated_at": 1490423189853
 }
